@@ -1,5 +1,5 @@
  /**
- * Self-written "Two Sum" from LeetCode solution.
+ * Self-written solution of "Two Sum" from LeetCode.
  *
  * @author JZ-FSDev
  * @since 17.0.1
