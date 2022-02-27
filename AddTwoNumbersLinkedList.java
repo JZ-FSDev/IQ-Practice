@@ -11,7 +11,7 @@
 
 
  /**
- * Self-written "Add Two Numbers" from LeetCode solution.
+ * Self-written solution for "Add Two Numbers" from LeetCode.
  *
  * @author JZ-FSDev
  * @since 17.0.1
