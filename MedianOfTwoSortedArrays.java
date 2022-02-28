@@ -1,3 +1,11 @@
+ /**
+ * Self-written solution of "Median of Two Sorted Arrays" from LeetCode.
+ * Achieved 100 percentile for java submissions in terms of speed (1ms).
+ *
+ * @author JZ-FSDev
+ * @since 17.0.1
+ * @version 0.0.1
+ */
 public class MedianOfTwoSortedArrays {
     
     public static void main(String[] args) {
@@ -8,6 +16,14 @@ public class MedianOfTwoSortedArrays {
         System.out.println(d);
     }
 
+    /**
+     * Given two sorted arrays nums1 and nums2 of size m and n respectively, return the median of the two sorted arrays.
+     * The overall run time complexity should be O(log (m+n)).
+     * 
+     * @param nums1 The first sorted array to be merged.
+     * @param nums2 The second sorted array to be merged.
+     * @return Returns the median of the two sorted arrays.
+     */
     public static double findMedianSortedArrays(int[] nums1, int[] nums2) {
         int mid = (nums1.length + nums2.length) / 2;
         boolean odd = (nums1.length + nums2.length) % 2 == 1;
@@ -25,7 +41,7 @@ public class MedianOfTwoSortedArrays {
             }
         }
 
-        if(odd){  // check if odd
+        if(odd){ // check if odd
             ans = temp[mid];
         }else{
             ans = (temp[mid - 1] + temp[mid]) / 2.0;
