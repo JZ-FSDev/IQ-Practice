@@ -1,6 +1,14 @@
+ /**
+ * Self-written solution of "Container With Most Water" from LeetCode.
+ *
+ * @author JZ-FSDev
+ * @since 17.0.1
+ * @version 0.0.1
+ */
 public class ContainerWithMostWater {
 
     public static void main(String[] args) {
+        // Test the method
         int[] arr = { 1, 1 };
         System.out.println(maxArea(arr));
     }
@@ -10,11 +18,11 @@ public class ContainerWithMostWater {
      * drawn such that the two endpoints of the ith line are (i, 0) and (i,
      * height[i]). Find two lines that together with the x-axis form a container,
      * such that the container contains the most water.
-     * Return the maximum amount of water a container can store. Notice that you may
-     * not slant the container.
+     * Return the maximum amount of water a container can store. 
+     * Notice that you may not slant the container.
      * 
-     * @param height
-     * @return
+     * @param height The array of different heights.
+     * @return The max area of the array given the restrictions.
      */
     public static int maxArea(int[] height) {
         int maxArea = 0;
