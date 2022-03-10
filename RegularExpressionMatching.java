@@ -14,7 +14,9 @@ public class RegularExpressionMatching {
     }
 
     /**
-     * Returns true if the specified String matches the specified String pattern.
+     * Given an input string s and a pattern p, implement regular expression matching with support for '.' and '*' where:
+     * '.' Matches any single character. '*' Matches zero or more of the preceding element.
+     * The matching should cover the entire input string (not partial).
      * 
      * @param toMatch The String to match to the specified pattern.
      * @param pattern The String pattern to match to the specified String.
