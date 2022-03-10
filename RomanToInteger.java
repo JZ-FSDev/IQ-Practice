@@ -1,30 +1,43 @@
 public class RomanToInteger {
     
     public static void main(String[] args) {
-        System.out.println(romanToInt("MCMXCIV"));
+        // Test the method
+        System.out.println(romanToInt("DCXXI"));
     }
 
     public static int romanToInt(String s) {
-        boolean iFound = false;
         int num = 0;
         for(int i = 0; i < s.length(); i++){
-            if(iFound){
-                if(s.charAt(i) == 'I'){
-                    num += 1;
-                }else if(s.charAt(i) == 'V'){
+            if(s.charAt(i) == 'I' && i + 1 < s.length()){
+                if(s.charAt(i + 1) == 'V'){
                     num += 4;
-                }else if(s.charAt(i) == 'X'){
+                    i++;
+                }else if(s.charAt(i + 1) == 'X'){
                     num += 9;
-                }else if(s.charAt(i) == 'L'){
-                    num += 40;
-                }else if(s.charAt(i) == 'C'){
-                    num += 90;
-                }else if(s.charAt(i) == 'D'){
-                    num += 400;
-                }else if(s.charAt(i) == 'M'){
-                    num += 900;
+                    i++;
+                }else{
+                    num += 1;
                 }
-                iFound = false;
+            }else if(s.charAt(i) == 'X' && i + 1 < s.length()){
+                if(s.charAt(i + 1) == 'L'){
+                    num += 40;
+                    i++;
+                }else if(s.charAt(i + 1) == 'C'){
+                    num += 90;
+                    i++;
+                }else{
+                    num += 10;
+                }
+            }else if(s.charAt(i) == 'C' && i + 1 < s.length()){
+                if(s.charAt(i + 1) == 'D'){
+                    num += 400;
+                    i++;
+                }else if(s.charAt(i + 1) == 'M'){
+                    num += 900;
+                    i++;
+                }else{
+                    num += 100;
+                }
             }else{
                 if(s.charAt(i) == 'I'){
                     num += 1;
@@ -41,9 +54,6 @@ public class RomanToInteger {
                 }else if(s.charAt(i) == 'M'){
                     num += 1000;
                 }
-            }
-            if(s.charAt(i) == 'I' || s.charAt(i) == 'X' || s.charAt(i) == 'C'){
-                iFound = true;
             }
         }
         return num;
