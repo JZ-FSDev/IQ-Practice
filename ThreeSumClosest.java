@@ -1,10 +1,30 @@
+/**
+ * Self-written solution for "3Sum Closest" from LeetCode.
+ * Faster than 5.03% of submissions (can be more efficicent)
+ *
+ * @author JZ-FSDev
+ * @since 17.0.1
+ * @version 0.0.1
+ */
 public class ThreeSumClosest {
 
     public static void main(String[] args) {
+        // Test the method
         int[] nums = { -3, -2, -5, 3, -4 };
         System.out.println(threeSumClosest(nums, -1));
     }
 
+    /**
+     * Given an integer array nums of length n and an integer target, find three
+     * integers in nums such that the sum is closest to target.
+     * Return the sum of the three integers.
+     * You may assume that each input would have exactly one solution.
+     * 
+     * @param nums   The array of ints to find the closest three sum.
+     * @param target The target int.
+     * @return The sum of three integers in the specified array closest to the
+     *         target.
+     */
     public static int threeSumClosest(int[] nums, int target) {
         int closest = nums[0] + nums[1] + nums[2];
         int first = 0;
