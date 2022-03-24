@@ -50,6 +50,37 @@ public class LetterCombPhoneNumber {
             for(int i = 0; i < group1.length * group2.length * group3.length; i++){
                 result.set(i, result.get(i) + group3[i % group3.length]);
             }
+        }else if(digits.length() == 4){
+            group1 = convert(Integer.parseInt(digits.substring(0, 1)));
+            group2 = convert(Integer.parseInt(digits.substring(1, 2)));
+            group3 = convert(Integer.parseInt(digits.substring(2, 3)));
+            group4 = convert(Integer.parseInt(digits.substring(3, 4)));
+            for(int i = 0; i < group1.length; i++){
+                for(int j = 0; j < group2.length * group3.length * group4.length; j++){
+                    result.add("" + group1[i]);
+                }
+            }
+            int count = 0;
+            int index = 0;
+            for(int j = 0; j < group1.length * group2.length; j++){
+                for(int i = 0; i < group3.length * group4.length; i++){
+                    result.set(index, result.get(index) + group2[count % group2.length]);
+                    index++;
+                }
+                count++;
+            }
+            count = 0;
+            index = 0;
+            for(int j = 0; j < group1.length * group2.length * group3.length; j++){
+                for(int i = 0; i < group4.length; i++){
+                    result.set(index, result.get(index) + group3[count % group3.length]);
+                    index++;
+                }
+                count++;
+            }
+            for(int i = 0; i < group1.length * group2.length * group3.length * group4.length; i++){
+                result.set(i, result.get(i) + group4[i % group4.length]);
+            }
         }
         return result;
     }
