@@ -1,11 +1,30 @@
 import java.util.Stack;
 
+ /**
+ * Self-written solution of "Valid Parentheses" from LeetCode.
+ *
+ * @author JZ-FSDev
+ * @since 17.0.1
+ * @version 0.0.1
+ */
 public class ValidParentheses{
 
     public static void main(String[] args) {
+        // Test the method
         System.out.println(isValid("()"));
     }
 
+    /**
+     * Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', 
+     * determine if the input string is valid.
+     * 
+     * An input string is valid if:
+     * Open brackets must be closed by the same type of brackets.
+     * Open brackets must be closed in the correct order.
+     * 
+     * @param s The String to be checked for validity.
+     * @return Returns true if the given String contains a valid set of parentheses.
+     */
     public static boolean isValid(String s) {
         Stack<Character> stack = new Stack<Character>();
         boolean valid = s.length() > 1;
