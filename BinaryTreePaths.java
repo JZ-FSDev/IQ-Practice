@@ -13,5 +13,11 @@ public class BinaryTreePaths {
         two.right = five;
         print(binaryTreePaths(one));
     }
+    
+    public static List<String> binaryTreePaths(TreeNode root) {
+        ArrayList<String> paths = new ArrayList<String>();
+        binaryTreePaths(root, "", paths);
+        return paths;
+    }
 }    
    
