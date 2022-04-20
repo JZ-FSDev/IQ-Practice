@@ -19,5 +19,16 @@ public class BinaryTreePaths {
         binaryTreePaths(root, "", paths);
         return paths;
     }
+    
+    private static void binaryTreePaths(TreeNode curr, String s, ArrayList<String> paths) {
+        if (curr != null) {
+            s += curr.val + "->";
+            if (curr.left == null && curr.right == null) {
+                paths.add(s.substring(0, s.length() - 2));
+            }
+            binaryTreePaths(curr.left, s, paths);
+            binaryTreePaths(curr.right, s, paths);
+        }
+    }    
 }    
    
