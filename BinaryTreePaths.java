@@ -29,6 +29,12 @@ public class BinaryTreePaths {
             binaryTreePaths(curr.left, s, paths);
             binaryTreePaths(curr.right, s, paths);
         }
+    }
+    
+    private static void print(List<String> paths) {
+        for (String s : paths) {
+            System.out.println(s);
+        }
     }    
 }    
    
