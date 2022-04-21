@@ -17,20 +17,10 @@ public class MaximumDepthOfBinaryTree {
      * @return The maximum depth of the given binary tree.
      */
     public int maxDepth(TreeNode root) {
-        return inOrderTraversal(root) - 1;
-    }
-
-    /**
-     * Helper method to return the max depth + 1 of the given binary tree.
-     * 
-     * @param curr The current TreeNode in each recursive call.
-     * @return The max depth + 1 of the given binary tree.
-     */
-    private int inOrderTraversal(TreeNode curr) {
-        int left = 1, right = 1;
-        if (curr != null) {
-            left += inOrderTraversal(curr.left);
-            right += inOrderTraversal(curr.right);
+        int left = 0, right = 0;
+        if(root != null){
+            left += 1 + maxDepth(root.left);
+            right += 1 + maxDepth(root.right);
         }
         return Math.max(left, right);
     }
