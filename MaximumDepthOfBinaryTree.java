@@ -1,6 +1,6 @@
 /**
- * Self-written solution for "Longest Substring Without Repeating Characters"
- * from LeetCode.
+ * Self-written solution for "Maximum Depth of Binary Tree" from LeetCode.
+ * Faster than 100.00% of Java online submissions.
  *
  * @author JZ-FSDev
  * @since 17.0.1
