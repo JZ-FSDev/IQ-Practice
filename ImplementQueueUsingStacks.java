@@ -23,4 +23,20 @@ public class ImplementQueueUsingStacks {
         }
         return item;
     }
-}    
+    
+    public int peek() {
+        Stack<Integer> temp = new Stack<Integer>();
+        while(!stack.isEmpty()){
+            temp.push(stack.pop());
+        }
+        int item = temp.peek();
+        while(!temp.isEmpty()){
+            stack.push(temp.pop());
+        }
+        return item;
+    }
+    
+    public boolean empty() {
+        return stack.isEmpty();
+    }
+}
