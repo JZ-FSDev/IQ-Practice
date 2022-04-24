@@ -28,4 +28,14 @@ public class FindIfPathExistsInGraph {
         }
         return d;
     }
+    
+    private boolean exists(int[] list, int size, int item) {
+        boolean exists = false;
+        for (int i = 0; i < size; i++) {
+            if (list[i] == item) {
+                exists = true;
+            }
+        }
+        return exists;
+    }    
 }
