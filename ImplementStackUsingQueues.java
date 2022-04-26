@@ -23,4 +23,21 @@ public class ImplementStackUsingQueues {
         queue = temp;
         return item;
     }
-}    
+    
+    public int pop() {
+        int item = 0;
+        Queue<Integer> temp = new LinkedList<Integer>();
+        while(!queue.isEmpty()){
+            item = queue.remove();
+            if(!queue.isEmpty()){
+                temp.add(item);
+            }
+        }
+        queue = temp;
+        return item;
+    }
+    
+    public boolean empty() {
+        return queue.isEmpty();
+    }
+}
