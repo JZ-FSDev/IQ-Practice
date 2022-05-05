@@ -1,5 +1,8 @@
-#96.62%
+# Self-written solution of "Remove Duplicates from Sorted List" from LeetCode.
+# Faster than 96.62% of Python online submissions.
+# author JZ-FSDev
 
+# Given the head of a sorted linked list, delete all duplicates such that each element appears only once. Return the linked list sorted as well.
 def deleteDuplicates(self, head):
     """
     :type head: ListNode
