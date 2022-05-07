@@ -1,5 +1,5 @@
 # Self-written solution of "Length of Last Word" from LeetCode.
-# Faster than 89.05%% of Python online submissions.
+# Faster than 89.05% of Python online submissions.
 # author JZ-FSDev
 
 # Given a string s consisting of some words separated by some number of spaces, return the length of the last word in the string.
