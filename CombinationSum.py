@@ -1,5 +1,5 @@
 # Self-written solution of "Combination Sum" from LeetCode.
-# Faster than 61.38% of Python online submissions.
+# Faster than 73.88% of Python online submissions.
 # author JZ-FSDev
 
 # Given an array of distinct integers candidates and a target integer target, return a list of all unique combinations of candidates where the chosen numbers sum to target. You may return the combinations in any order.
@@ -12,7 +12,6 @@ def combinationSum(self, candidates, target):
     :rtype: List[List[int]]
     """
     res = []
-    candidates.sort()
     
     def dfs(target, index, path):
         if target == 0:
