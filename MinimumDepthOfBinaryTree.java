@@ -2,7 +2,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 /**
- * Self-written solution of "Merge Two Sorted Lists" from LeetCode.
+ * Self-written solution of "Minimum Depth of Binary Tree" from LeetCode.
  * Faster than 95.55% of Java online submissions.
  * 
  * @author JZ-FSDev
@@ -32,7 +32,7 @@ public class MinimumDepthOfBinaryTree {
             boolean terminate = false;
             while (!q.isEmpty() && !terminate) {
                 int size = q.size();
-                for (int i = 0; i < size; i++) {
+                for (int i = 0; i < size; i++) { // go through all the nodes of each level to trigger exit of loop if shorter depth on right side
                     TreeNode curr = q.poll();
                     if (curr.left == null && curr.right == null && !terminate) {
                         terminate = true;
@@ -50,5 +50,4 @@ public class MinimumDepthOfBinaryTree {
         }
         return depth;
     }
-
 }
