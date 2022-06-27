@@ -1,3 +1,4 @@
+// @author JZ-FSDev
 // Runtime: 15 ms, faster than 96.80% of C online submissions for Power of Three.
 
 // Given an integer n, return true if it is a power of three. Otherwise, return false.
