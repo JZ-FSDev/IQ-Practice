@@ -17,7 +17,7 @@ int* intersect(int* nums1, int nums1Size, int* nums2, int nums2Size, int* return
     int *tempIntersect = malloc(sizeof(int) * nums1Size);
     int tempIndex = 0;
     
-    int *intersect = malloc(sizeof(int*) * nums1Size);
+    int *intersect = malloc(sizeof(int) * nums1Size);
     int index = 0;
     
     
