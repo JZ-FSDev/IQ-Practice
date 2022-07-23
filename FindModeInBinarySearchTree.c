@@ -1,3 +1,9 @@
+// @author JZ-FSDev
+// Runtime: 30 ms, faster than 21.28% of C online submissions for Find Mode in Binary Search Tree.
+
+// Given the root of a binary search tree (BST) with duplicates, return all the mode(s) (i.e., the most frequently occurred element) in it.
+// If the tree has more than one mode, return them in any order.
+    
 /**
  * Definition for a binary tree node.
  * struct TreeNode {
