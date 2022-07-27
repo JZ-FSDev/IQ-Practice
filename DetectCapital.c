@@ -19,6 +19,7 @@ bool detectCapitalUse(char * word){
                         proper = false;
                     }
                 }
+                // case when next some char is capital and first char is not
                 if(j < strlen(word) && isupper(word[j - 1]) && !isupper(word[j])){
                     proper = false;
                 }
