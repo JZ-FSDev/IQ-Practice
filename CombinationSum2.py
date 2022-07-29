@@ -1,5 +1,6 @@
 # Self-written solution of "Combination Sum2" from LeetCode.
-# Can be more efficient (exceeds time limit, but works)
+# Runtime: 61 ms, faster than 78.79% of Python online submissions for Combination Sum II.
+# Memory Usage: 13.4 MB, less than 82.11% of Python online submissions for Combination Sum II.
 # author JZ-FSDev
 
 # Given a collection of candidate numbers (candidates) and a target number (target), find all unique combinations in candidates where the candidate numbers sum to target.
