@@ -52,5 +52,6 @@ void quickSort(int array[], int low, int high) {
 }
 
 int maximumProduct(int* nums, int numsSize){
-
+    quickSort(nums, 0, numsSize - 1);
+    return nums[numsSize - 1] * nums[numsSize - 2] * nums[numsSize - 3];
 }
