@@ -1,3 +1,8 @@
+// @author JZ-FSDev
+// Runtime: 66 ms, faster than 67.95% of C online submissions for Maximum Product of Three Numbers.
+
+// Given an integer array nums, find three numbers whose product is maximum and return the maximum product.
+
 // function to swap elements
 void swap(int *a, int *b) {
   int t = *a;
