@@ -1,5 +1,7 @@
 /**
  * Self-written solution of "Container With Most Water" from LeetCode.
+ * Runtime: 7 ms, faster than 21.61% of Java online submissions for Container With Most Water.
+ * Memory Usage: 72.6 MB, less than 74.56% of Java online submissions for Container With Most Water.
  *
  * @author JZ-FSDev
  * @since 17.0.1
