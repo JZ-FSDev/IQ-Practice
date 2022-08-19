@@ -1,4 +1,9 @@
 
+// @author JZ-FSDev
+// Runtime: 14 ms, faster than 97.56% of C online submissions for Valid Palindrome II.
+
+// Given a string s, return true if the s can be palindrome after deleting at most one character from it.
+
 bool solve(int i, int j, char *s){
     while(j > i){
         if(s[i] != s[j]){
