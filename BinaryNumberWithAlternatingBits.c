@@ -1,0 +1,4 @@
+
+bool hasAlternatingBits(int n){
+
+}
