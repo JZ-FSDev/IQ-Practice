@@ -1,13 +1,17 @@
-// Fix solution when bitshifting is covered
+int ret = 0;
+
+void solve(int num){
+    if(num > 0){
+        solve(num / 2);
+        ret <<= 1;  
+        if(num % 2 == 0){
+            ret += 1;
+        }
+    }
+}
 
 int findComplement(int num){
-    int newNum = 0;
-    int digit = (int)log10(num) + 1;
-    for(int i = 0; i < digit; i++){
-        if(num % 10 == 0){
-            newNum += 1 * (int)pow(10, i); 
-        }
-        num /= 10;
-    }
-    return binaryTodecimal(newNum);
+    ret = 0;
+    solve(num);
+    return ret;
 }
