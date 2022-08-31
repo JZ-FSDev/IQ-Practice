@@ -1,3 +1,7 @@
+// @author JZ-FSDev
+// Runtime: 0 ms, faster than 100.00% of C online submissions for Base 7.
+
+// Given an integer num, return a string of its base 7 representation.
 
 int ind = 0;
 char ptr[12];
