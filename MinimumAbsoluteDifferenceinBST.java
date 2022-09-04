@@ -1,3 +1,8 @@
+// @author JZ-FSDev
+// Runtime: 2 ms, faster than 45.02% of Java online submissions for Minimum Absolute Difference in BST.
+
+// Given the root of a Binary Search Tree (BST), return the minimum absolute difference between the values of any two different nodes in the tree.
+
 /**
  * Definition for a binary tree node.
  * public class TreeNode {
