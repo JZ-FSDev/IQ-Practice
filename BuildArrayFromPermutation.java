@@ -1,0 +1,17 @@
+// @author JZ-FSDev
+// Runtime: 1 ms, faster than 99.99% of Java online submissions for Build Array from Permutation.
+
+// Given a zero-based permutation nums (0-indexed), build an array ans of the same length where ans[i] = nums[nums[i]] for each 0 <= i < nums.length and return it.
+// A zero-based permutation nums is an array of distinct integers from 0 to nums.length - 1 (inclusive).
+
+public class BuildArrayFromPermutation {
+    class Solution {
+        public int[] buildArray(int[] nums) {
+            int[] res = new int[nums.length];
+            for(int i = 0; i < res.length; i++){
+                res[i] = nums[nums[i]];
+            }
+            return res;
+        }
+    }
+}
