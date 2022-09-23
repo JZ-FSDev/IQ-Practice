@@ -6,7 +6,7 @@
 // - It consists of only one unique digit.
 // Return the maximum good integer as a string or an empty string "" if no such integer exists.
 
-public class Largest3-Same-DigitNumberInString {
+public class Largest3SameDigitNumberInString {
     class Solution {
         public String largestGoodInteger(String num) {
             String ret = "";
