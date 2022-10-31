@@ -10,13 +10,27 @@ public class PalindromeLinkedList {
      * }
      */
     class Solution {
-        LinkedNode rev = new ListNode();
+        Stack<Integer> s = new Stack<Integer>();
 
-        public boolean isPalindrome(ListNode head, ListNode curr) {
-            if (head != null) {
-                isPalindrome(head.next, rev);
+        public boolean isPalindrome(ListNode head) {
+            ListNode temp = head;
+            boolean valid = true;
+
+            while (temp != null) {
+                s.push(temp.val);
+                temp = temp.next;
             }
 
+            temp = head;
+
+            while (temp != null && valid) {
+                if (temp.val != s.pop()) {
+                    valid = false;
+                }
+                temp = temp.next;
+            }
+
+            return valid;
         }
     }
 }
