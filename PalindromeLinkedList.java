@@ -10,7 +10,12 @@ public class PalindromeLinkedList {
      * }
      */
     class Solution {
-        public boolean isPalindrome(ListNode head) {
+        LinkedNode rev = new ListNode();
+
+        public boolean isPalindrome(ListNode head, ListNode curr) {
+            if (head != null) {
+                isPalindrome(head.next, rev);
+            }
 
         }
     }
