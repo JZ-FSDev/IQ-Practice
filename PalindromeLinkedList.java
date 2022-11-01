@@ -1,3 +1,7 @@
+// @author JZ-FSDev
+// Runtime: 34 ms, faster than 16.09% of Java online submissions for Palindrome Linked List.
+
+// Given the head of a singly linked list, return true if it is a palindrome or false otherwise.
 public class PalindromeLinkedList {
     /**
      * Definition for singly-linked list.
